@@ -15,7 +15,7 @@ $breadcrumbs = [
 ];
 ?>
 <?php include __DIR__ . '/../includes/header.php'; ?>
-// Top bar is already included in header.php, so we don't need top-bar.php
+
 
 <!-- Content -->
 <div class="container-fluid">

@@ -38,6 +38,12 @@ if(isset($_POST['sbt-goodie'])) {
 
 // Fetch visitors for dropdown
 $visitors = mysqli_query($conn, "SELECT id, name FROM vms_visitors ORDER BY name ASC");
+
+$breadcrumbs = [
+    ['url' => '../admin/dashboard.php', 'text' => 'Dashboard'],
+    ['url' => '../admin/manage-goodies.php', 'text' => 'Manage Goodies'],
+    ['text' => 'Add Goodie']
+];
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +58,7 @@ $visitors = mysqli_query($conn, "SELECT id, name FROM vms_visitors ORDER BY name
   <?php include __DIR__ . '/../includes/header.php'; ?>
 </head>
 <body id="page-top">
-  <?php include __DIR__ . '/../includes/top-bar.php'; ?>
+
   <div id="wrapper">
     <?php include __DIR__ . '/../includes/sidebar.php'; ?>
     
