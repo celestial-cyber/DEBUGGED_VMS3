@@ -73,7 +73,7 @@ if(isset($_POST['sbt-part'])) {
       ['url' => 'manage-participation.php', 'text' => 'Participation'],
       ['text' => 'Add Participation']
   ];
-  include __DIR__ . '/../includes/top-bar.php';
+  //include __DIR__ . '/../includes/top-bar.php';
   ?>
   <div id="wrapper">
     <?php include __DIR__ . '/../includes/sidebar.php'; ?>
@@ -88,7 +88,10 @@ if(isset($_POST['sbt-part'])) {
           <span class="badge">Live Form</span>
         </div>
         <div class="d-flex gap-2">
-          <button class="btn btn-outline-primary" onclick="location.href='manage-participation.php'"><i class="fa-solid fa-chart-line me-2"></i>View All</button>
+          <button class="btn btn-outline-primary" onclick="location.href='../admin/manage-participation.php'">
+    View All
+</button>
+
           <button class="btn btn-outline-secondary" onclick="location.reload()"><i class="fa-solid fa-arrow-rotate-right me-2"></i>Reset</button>
         </div>
       </div>

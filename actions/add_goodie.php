@@ -72,7 +72,10 @@ $breadcrumbs = [
           <span class="badge">Live Form</span>
         </div>
         <div class="d-flex gap-2">
-          <button class="btn btn-outline-primary" onclick="location.href='manage-goodies.php'"><i class="fa-solid fa-truck me-2"></i>View All</button>
+          <button class="btn btn-outline-primary" onclick="location.href='../admin/manage-goodies.php'">
+    <i class="fa-solid fa-truck me-2"></i>View All
+</button>
+
           <button class="btn btn-outline-secondary" onclick="location.reload()"><i class="fa-solid fa-arrow-rotate-right me-2"></i>Reset</button>
         </div>
       </div>
